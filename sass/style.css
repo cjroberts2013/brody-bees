@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.sidebar {
+  background-color: #e3ac1b; }
+
+.header {
+  background-color: #1f2c3d; }
+
+.gallery {
+  background-color: #fffdff; }
+
+.about {
+  background-color: #2e3444; }
+
+.story__pictures {
+  background-color: #f0b41d; }
+
+.story__content {
+  background-color: #a37b14; }
+
+.footer {
+  background-color: #333333; }
+
+.services {
+  background-color: #fffdff; }

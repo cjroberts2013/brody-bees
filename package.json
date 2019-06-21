@@ -1,0 +1,32 @@
+{
+  "name": "brody-bees",
+  "version": "1.0.0",
+  "description": "Brody's Busy Bees Website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/style.scss sass/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/style.scss sass/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' sass/style.comp.css -o sass/style.prefix.css",
+    "compress:css": "node-sass sass/style.prefix.css sass/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjroberts2013/brody-bees.git"
+  },
+  "author": "Charles Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjroberts2013/brody-bees/issues"
+  },
+  "homepage": "https://github.com/cjroberts2013/brody-bees#readme",
+  "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  }
+}

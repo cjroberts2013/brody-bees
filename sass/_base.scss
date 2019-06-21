@@ -1,0 +1,38 @@
+// COLOR VARIABLES
+$color-primary: #e3ac1b;
+$color-primary-dark: #a37b14;
+$color-primary-light: #f0b41d;
+
+$color-secondary-light: #2e3444;
+$color-secondary-dark: #1f2c3d;
+
+$color-grey-light-1: #fffdff;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark: #333333;
+
+// FONT VARIABLES
+$font-primary: "Montserrat", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+}
